@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3da1d5"
+        >
+                <TextView 
+                    android:id="@+id/tv_page2_dialog_dbsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待办事务"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"/>
+                <TextView 
+                    android:id="@+id/tv_page2_dialog_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="更多"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView 
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/iv_page2_dialog_tianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tianjia2"
+                    android:scaleType="fitCenter"
+                    android:layout_toLeftOf="@id/tv_page2_dialog_more"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+	<ListView 
+	    android:id="@+id/listview_page2_dialog"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    ></ListView>
+</LinearLayout>

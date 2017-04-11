@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".OtherInformActivity" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inform_u2"
+        >
+        <ImageView 
+            android:id="@+id/other_inform_iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/login_u12"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="院级公告"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+        
+    </LinearLayout>
+    <ListView 
+        android:layout_weight="13"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/other_inform_list"
+        android:background="#ffffff"
+        ></ListView>
+    
+
+
+</LinearLayout>

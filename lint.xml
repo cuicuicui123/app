@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/goodo/app/CalendarView.java" />
+        <ignore path="src/com/goodo/app/ChakangrapActivity.java" />
+        <ignore path="src/com/goodo/app/ReceNoticeActivity.java" />
+        <ignore path="src/com/goodo/app/fragment/FragmentPage2.java" />
+        <ignore path="src/com/goodo/app/myView/AnriView.java" />
+    </issue>
+    <issue id="CommitPrefEdits">
+        <ignore path="src/com/goodo/app/RemindActivity.java" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/goodo/app/EmailwriteActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="Recycle" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore">
+        <ignore path="src/com/goodo/app/CalendarView.java" />
+        <ignore path="src/com/goodo/app/fragment/FragmentPage2.java" />
+        <ignore path="src/com/goodo/app/myView/MyView.java" />
+    </issue>
+    <issue id="UseSparseArrays" severity="ignore">
+        <ignore path="src/com/goodo/app/ChakandbswActivity.java" />
+        <ignore path="src/com/goodo/app/EmailwriteActivity.java" />
+    </issue>
+    <issue id="UseValueOf">
+        <ignore path="src/com/goodo/app/SelAttachActivity.java" />
+    </issue>
+    <issue id="ViewHolder">
+        <ignore path="src/com/goodo/adapter/DataAdapter.java" />
+    </issue>
+</lint>

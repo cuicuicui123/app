@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_cornor"
+    android:gravity="center"
+    android:padding="10dp" >
+    
+    <Button 
+        android:id="@+id/sel_cal_anzhou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按周查看"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/dialog_cornor"
+        android:padding="5dp"
+        />
+    <Button 
+        android:id="@+id/sel_cal_anyue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按月查看"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/dialog_cornor"
+        android:padding="5dp"/>
+    <Button 
+        android:id="@+id/sel_cal_anri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按日查看"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/dialog_cornor"
+        android:padding="5dp"/>
+
+</LinearLayout>

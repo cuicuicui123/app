@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/fl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3da1d5">
+        <ImageView 
+            android:id="@+id/iv_user_1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/u89"
+            android:scaleType="fitStart"/>
+        <TextView 
+            android:id="@+id/tv_person_1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_user_1"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:lines="1"
+            android:ellipsize="end"/>
+        <TextView 
+            android:id="@+id/tv_page1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="院级公告"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+        <ImageView 
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_more"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview_page1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="#ffffff"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>
+	<LinearLayout 
+    android:id="@+id/ll"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <ProgressBar 
+    android:id="@+id/progressbar"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_gravity="center_horizontal"/>
+	<TextView 
+	android:id="@+id/tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="加载中"
+    android:textSize="15sp"
+    android:textColor="#666666"
+    android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</FrameLayout>

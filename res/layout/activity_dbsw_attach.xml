@@ -1,0 +1,38 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.goodo.app.DbswAttachActivity">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#3da1d5">
+	    <ImageView 
+	        android:id="@+id/iv_return"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/login_u12"
+	        android:scaleType="fitStart"
+	        android:layout_alignParentLeft="true"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="备注附件"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:layout_centerInParent="true"/>
+	</RelativeLayout>
+	<LinearLayout 
+	    android:id="@+id/ll_fujian"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="13"
+	    android:orientation="vertical"
+	    android:padding="10dp">
+	    
+	</LinearLayout>
+</LinearLayout>

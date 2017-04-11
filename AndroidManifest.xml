@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goodo.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo120"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name=".NotificationService" >
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MoreInformActivity"
+            android:label="@string/title_activity_more_inform"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MoreHomeActivity"
+            android:label="@string/title_activity_more_home"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/title_activity_person"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".InformActivity"
+            android:label="@string/title_activity_inform"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".OtherInformActivity"
+            android:label="@string/title_activity_other_inform"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SelectActivity"
+            android:label="@string/title_activity_select" >
+        </activity>
+        <activity
+            android:name=".DocumentActivity"
+            android:label="@string/title_activity_document" >
+        </activity>
+        <activity
+            android:name=".DocSendActivity"
+            android:label="@string/title_activity_doc_send"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/title_activity_email" >
+        </activity>
+        <activity
+            android:name=".ReceActivity"
+            android:label="@string/title_activity_rece"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DataActivity"
+            android:label="@string/title_activity_data"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DocRece2Activity"
+            android:label="@string/title_activity_doc_rece2"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DocWriteActivity"
+            android:label="@string/title_activity_doc_write"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SelectPersonActivity"
+            android:label="@string/title_activity_select_person"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MoreReceActivity"
+            android:label="@string/title_activity_more_rece"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DbswMoreActivity"
+            android:label="@string/title_activity_dbsw_more"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DbswAddActivity"
+            android:label="@string/title_activity_dbsw_add"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ChakangrapActivity"
+            android:label="@string/title_activity_chakangrap"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ChakandbswActivity"
+            android:label="@string/title_activity_chakandbsw"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".NoticeActivity"
+            android:label="@string/title_activity_notice"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".Select2Activity"
+            android:label="@string/title_activity_select2"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".NoticewriteActivity"
+            android:label="@string/title_activity_noticewrite"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DocsendmoreActivity"
+            android:label="@string/title_activity_docsendmore"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".OtherinformlistActivity"
+            android:label="@string/title_activity_otherinformlist"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".BianJigrapActivity"
+            android:label="@string/title_activity_bian_jigrap"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DelgrapActivity"
+            android:label="@string/title_activity_delgrap"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ZwdbgrapActivity"
+            android:label="@string/title_activity_zwdbgrap"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SelAttachActivity"
+            android:label="@string/title_activity_sel_attach"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MoreMydbctivity"
+            android:label="@string/title_activity_more_mydbctivity" >
+        </activity>
+        <activity
+            android:name=".MoreYfMainActivity"
+            android:label="@string/title_activity_more_yf_main"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DbswBeizhuActivity"
+            android:label="@string/title_activity_dbsw_beizhu"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DbswZwrcActivity"
+            android:label="@string/title_activity_dbsw_zwrc"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".AddremindActivity"
+            android:label="@string/title_activity_addremind"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".RemindActivity"
+            android:label="@string/title_activity_remind"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ReceNoticeActivity"
+            android:label="@string/title_activity_rece_notice"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SendNoticeActivity"
+            android:label="@string/title_activity_send_notice"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ReplyActivity"
+            android:label="@string/title_activity_reply"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".EmailwriteActivity"
+            android:label="@string/title_activity_emailwrite"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MoresendActivity"
+            android:label="@string/title_activity_moresend"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MoredraftActivity"
+            android:label="@string/title_activity_moredraft"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MorerecoverActivity"
+            android:label="@string/title_activity_morerecover"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".OuteremailWriteActivity"
+            android:label="@string/title_activity_outeremail_write"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MydocActivity"
+            android:label="@string/title_activity_mydoc"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".AttachActivity"
+            android:label="@string/title_activity_attach"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DbswAttachActivity"
+            android:label="@string/title_activity_dbsw_attach"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

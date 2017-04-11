@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"     
+   android:id="@android:id/tabhost"   
+   android:layout_width="fill_parent"     
+   android:layout_height="fill_parent"
+   android:background="#ffffff" >     
+   <com.goodo.app.XCSlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu" />
+   			<LinearLayout   
+      			android:orientation="vertical" 
+      			android:background="#ffffff"    
+      			android:layout_width="fill_parent"   
+      			android:layout_height="fill_parent" >
+      			<LinearLayout 
+    				android:id="@+id/select_linearlayout"      
+				    android:layout_width="match_parent"
+       				android:layout_height="0dp"
+        			android:layout_weight="2">
+				    <RelativeLayout 
+        				android:layout_width="match_parent"
+       					android:layout_height="match_parent"
+        				android:background="@drawable/inform_u2"
+        				android:id="@+id/select_rl">
+        			<ImageView 
+            			android:id="@+id/iv_user"
+            			android:layout_width="40dp"
+           				android:layout_height="wrap_content"
+            			android:src="@drawable/start_u28"
+            			android:scaleType="fitStart"/>
+        			<TextView 
+           				android:id="@+id/tv_person"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:layout_toRightOf="@id/iv_user"
+            			android:layout_alignParentBottom="true"
+            			android:text="张思"
+            			android:textColor="#ffffff"
+            			android:textSize="15sp"/>
+        			<TextView 
+        			    android:id="@+id/select_title"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:textSize="20sp"
+            			android:text="院级公告"
+            			android:textColor="#ffffff"
+            			android:layout_centerInParent="true"/>
+        			<TextView 
+            			android:id="@+id/tv_more"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:textColor="#ffffff"
+            			android:textSize="15sp"
+            			android:text="更多"
+            			android:layout_alignParentRight="true"
+            			android:layout_centerVertical="true"/>
+        			<TextView 
+        			    android:id="@+id/tv_send"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:textColor="#ffffff"
+        			    android:textSize="20sp"
+        			    android:layout_toRightOf="@id/select_title"
+        			    android:layout_centerVertical="true"/>
+        			<TextView 
+        			    android:id="@+id/tv_rece"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:textColor="#ffffff"
+        			    android:textSize="20sp"
+        			    android:layout_toLeftOf="@id/select_title"
+        			    android:layout_centerVertical="true"/>
+    			</RelativeLayout>
+			</LinearLayout>     
+      		<FrameLayout   
+          		android:id="@android:id/tabcontent"     
+          		android:layout_width="fill_parent"      
+          		android:layout_height="0dp"     
+          		android:layout_weight="24">    
+          		<FrameLayout 
+              		android:id="@+id/framelayout"
+              		android:layout_width="match_parent"
+              		android:layout_height="match_parent">  
+          		</FrameLayout>
+         
+      		</FrameLayout>
+      		<View 
+          		style="@style/divider_horizontal"/>     
+      		<TabWidget   
+          		android:id="@android:id/tabs"    
+          		android:layout_width="fill_parent"      
+          		android:layout_height="0dp"  
+          		android:layout_weight="2" />     
+    		</LinearLayout>     
+        </LinearLayout>
+    </com.goodo.app.XCSlideMenu>
+</TabHost>  

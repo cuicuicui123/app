@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_cornor"
+    android:gravity="center_horizontal"
+    android:padding="3dp" >
+    
+    <Button 
+        android:id="@+id/doc_rece_dialog_zhuanfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转发"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/dialog_cornor"
+        android:layout_margin="10dp"
+        />
+    <Button 
+        android:id="@+id/doc_rece_dialog_zwdb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转为代办"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/dialog_cornor"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

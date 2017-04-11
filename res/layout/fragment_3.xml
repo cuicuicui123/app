@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#3da1d5">
+	    <ImageView 
+	        android:id="@+id/iv_user_3"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/u89"
+	        android:scaleType="fitStart"/>
+	    <TextView 
+	        android:id="@+id/tv_person_3"
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_user_3"
+	        android:layout_alignParentBottom="true"
+	        android:textColor="#ffffff"
+	        android:textSize="15sp"
+	        android:lines="1"
+	        android:ellipsize="end"/>
+	    <TextView 
+	        android:id="@+id/tv_page3_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:text="收发文件"
+	        android:textColor="#ffffff"
+	        android:layout_centerInParent="true"/>
+	</RelativeLayout>
+
+	<ExpandableListView
+	    android:id="@+id/explistview_page3"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="12" >
+	</ExpandableListView>
+
+</LinearLayout>

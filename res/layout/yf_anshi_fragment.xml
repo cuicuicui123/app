@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+	<com.fortysevendeg.swipelistview.SwipeListView  
+            android:id="@+id/id_swipelistviewyifaanshi"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            swipe:swipeActionLeft="reveal"  
+            swipe:swipeBackView="@+id/id_back"  
+            swipe:swipeCloseAllItemsWhenMoveList="true"  
+            swipe:swipeFrontView="@+id/id_front"  
+            swipe:swipeMode="both"  
+            swipe:swipeOffsetLeft="300dip"  
+            swipe:swipeOffsetRight="300dip" 
+            swipe:swipeOpenOnLongPress="false" /> 
+</LinearLayout>
